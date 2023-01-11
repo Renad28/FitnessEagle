@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', fantasy;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(Images/pic\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.list li {
+    display: inline-block;
+    padding: 0 5px;
+    margin-left: 25px;
+}
+
+.left {
+    color: white;
+    float: left;
+    padding-top: 10px;
+    margin: 10px;
+}
+.left h1{
+    font-size: 40px;
+}
+.right {
+    float: right;
+    width: 40%;
+    padding-top: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.list a:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 11111;
+    padding: 10px 0 15px;
+}
+.clr{
+    clear: both;
+}
+header .text {
+    text-align: center;
+    transform: translateY(450%);
+    color: yellow;
+    line-height: 50px;
+    font-size: 150%;
+text-shadow: 5px 5px black;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+button{
+    background: black;
+    color: yellow;
+    width: 150px;
+    height: 36px;
+    font-size: 24px;
+    border-color: yellow;
+    font-weight: 600;
+    border-radius: 22px;
+    letter-spacing: 7px;
+    transition: 0.3s;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 50px 0 yellow,0 20px 100px 0 yellow;
+}
+body {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
